@@ -24,7 +24,6 @@ for model in models:
     rows = table.find_all('tr')
     for row in rows:
         data = row.find_all('td')
-        print len(data)
         if len(data) == 4:
             d[data[1].get_text()] = data[2].get_text()
 
